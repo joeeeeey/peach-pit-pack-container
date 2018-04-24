@@ -8,17 +8,23 @@
     "material-ui-icons": "^1.0.0-beta.36",
     "prop-types": "15.6.1",
     "react": "16.3.1",
-    "react-contenteditable": "^2.0.7",
     "react-dom": "16.3.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "redux": "^3.7.2",
     "typeface-roboto": "0.0.54",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "antd": "^3.4.1",
+    "axios": "^0.18.0",
+    "js-cookie": "^2.2.0",
+    "react-quill": "^1.2.7",
+    "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn run delete-maps",
+    "delete-maps": "yarn run delete-map-files && yarn run delete-references-to-map-files",
+    "delete-map-files": "find ./build -name '*.map' -delete",
+    "delete-references-to-map-files": "find ./build -regex '.*\\.\\(js\\|css\\)' -exec sed -i -E '\\/[\\*\\/]#\\ssourceMappingURL=main(\\.[0-9a-f]+)?\\.(css|js)\\.map(\\*\\/)?/g' {} +",    
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

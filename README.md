@@ -4,4 +4,6 @@
 
 > TODO  引入更多预览组件
 
+### install yarn
+https://yarnpkg.com/en/docs/install#mac-stable
 
