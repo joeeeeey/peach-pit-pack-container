@@ -11,7 +11,6 @@ import PropTypes from 'prop-types';
 
 const defaultImageStyle = { maxWidth: '100%', maxHeight: '100%' }
 
-
 export default class PreviewImageArea extends Component {
   constructor(props) {
     super(props);
@@ -19,12 +18,12 @@ export default class PreviewImageArea extends Component {
 
 
   render() {
-    const { src, alt } = this.props
+    const { src, alt, imageStyle = defaultImageStyle, imageContainerStyle = { margin: '1px 15px' } } = this.props
 
     return (
       <div
-        style={{ position: 'relative', textAlign: 'center', margin: '1px 15px' }}>
-        <img src={src} style={defaultImageStyle}></img>
+        style={Object.assign({ position: 'relative', textAlign: 'center' }, imageContainerStyle)}>
+        <img src={src} style={imageStyle}></img>
       </div>
     );
   }

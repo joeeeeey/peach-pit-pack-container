@@ -1,159 +1,184 @@
     
 import React, { Component } from 'react';
 import withRoot from '../withRoot';    
-import PreviewRoot from '../components/preview/root'
-import PreviewVerticalLayout from '../components/preview/verticalLayout'
-import PreviewVerticalGrid from '../components/preview/verticalGrid'
+import PreviewNavBar from '../components/preview/navBar'
 import PreviewImageArea from '../components/preview/imageArea'
 import PreviewTextArea from '../components/preview/textArea'
+import PreviewVerticalLayout from '../components/preview/verticalLayout'
+import PreviewVerticalGrid from '../components/preview/verticalGrid'
+import PreviewPhotoGallery from '../components/preview/photoGallery'
     
 class Index extends Component {
   render() {
     return (
     React.createElement(
-        PreviewRoot,
-        {"selfkey":"Root_fcef427b70ee741633101ad0ce93bebd","parentkey":"root"},
+        "div",
+        {"style":{"paddingTop":64},"selfkey":"Root_df450442d273013c2ef27fa9767948c6","parentkey":"root"},
 React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_4f669419d2b07e3e2484f75c5c03c6de","flex":[12],"selfkey":"VerticalLayout_d936ce438a4be291c9479a5bcb1d3bf7","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_ad3c504b03d9958d754a4b45178908aa","parentkey":"VerticalLayout_d936ce438a4be291c9479a5bcb1d3bf7"},
+        PreviewNavBar,
+        {"affectRoot":{"paddingTop":64},"rootChildren":[{"id":"VerticalLayout_5738168ec8888a0e454deba5c8482b91","name":"首页","nodeName":"VerticalLayout"},{"id":"VerticalLayout_d28d494b9d5b6d216245a3f8b69a2cd7","name":"关于","nodeName":"VerticalLayout"},{"id":"37505258","name":"品质","nodeName":"div"},{"id":"11260632","name":"展示","nodeName":"div"},{"id":"VerticalLayout_05ed66094b9cf867440e6adc5ed09e2c","name":"常见问题","nodeName":"VerticalLayout"},{"id":"VerticalLayout_c265ed96dd414c985e4f5c3f00002e4c","name":"联系我们","nodeName":"VerticalLayout"}],"selfkey":"NavBar_6c16e4cfb1db3e3b6f239971d27c5cb9","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/8f9130e0761678a017743be3ec38231c","selfkey":"ImageArea_50ca05232c56c20881588ae310202aee","parentkey":"VerticalGrid_ad3c504b03d9958d754a4b45178908aa"}
-    ),
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/18c703d2d023e8fd0d7cf07bed72c2f1","selfkey":"ImageArea_33288f273fb5b2b83a5998f5f8722908","parentkey":"VerticalGrid_ad3c504b03d9958d754a4b45178908aa"}
+        {"imageStyle":{"maxWidth":130,"maxHeight":40.6},"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/8419e0cee9e352e903578504e8b0fefc","selfkey":"ImageArea_c5d435a6606e0c672d50e1f475c53ce9","parentkey":"NavBar_6c16e4cfb1db3e3b6f239971d27c5cb9"}
     ),
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"Winery and Products Introduction","attributes":{"size":"large","bold":true}},{"insert":" ","attributes":{"bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_24a78165fe68893e27b053b049f442ee","parentkey":"VerticalGrid_ad3c504b03d9958d754a4b45178908aa"}
-    )
+        {"formats":["header","font","size","bold","italic","underline","strike","blockquote","bullet","link","color","align","script","direction","clean"],"toolbarAbove":false,"toolbarOverlayStyle":{"bottom":-75},"toolbarStyle":{"width":300},"deltaDeltaValue":[{"insert":"桃核家具"},{"insert":"\n","attributes":{"header":2}}],"selfkey":"TextArea_c4afba7d3ffc28d137e28a779af9d650","parentkey":"NavBar_6c16e4cfb1db3e3b6f239971d27c5cb9"}
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#020A0D","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_a999e7831d1d4c75c40077cdc7b005c1","flex":[3,6,3],"selfkey":"VerticalLayout_555aba23c3aa7aa5a02781b8e8eaa257","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
+        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/eb5662fc91d83e20c700ca23376b1cbc)","backgroundType":"image","imageInfo":{"width":1060,"height":666},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_5738168ec8888a0e454deba5c8482b91","flex":[12],"selfkey":"VerticalLayout_243d75898acc7bdcdf87a12dbbcda718","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_39cd32c36d6aee7f0c66c12882bde671","parentkey":"VerticalLayout_555aba23c3aa7aa5a02781b8e8eaa257"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/96c982abc59d0cea655c5330deb71dae","selfkey":"ImageArea_650913bf9061a83abf0607e9533343ef","parentkey":"VerticalGrid_39cd32c36d6aee7f0c66c12882bde671"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_3ccc187011e45558c1bf788f299180e6","parentkey":"VerticalLayout_555aba23c3aa7aa5a02781b8e8eaa257"},
+        {"selfkey":"VerticalGrid_b64f19b27a37cdf09a500d8a699cae4b","parentkey":"VerticalLayout_243d75898acc7bdcdf87a12dbbcda718"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"智利圣何塞酒庄(中国)代表处 ","attributes":{"color":"#ffffff","bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"暨 ","attributes":{"color":"#ffffff","bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"圣拉蒙贸易(武汉)有限公司 ","attributes":{"color":"#ffffff","bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_39589cdeb1d3530f4f256f328dceb183","parentkey":"VerticalGrid_3ccc187011e45558c1bf788f299180e6"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_407555961181b0caf0213b7b299ea242","parentkey":"VerticalLayout_555aba23c3aa7aa5a02781b8e8eaa257"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/cc9c0431bbd65720ef0f2e2da2f4820c","selfkey":"ImageArea_81faab07ea9033cc46b5aa0400e3d66b","parentkey":"VerticalGrid_407555961181b0caf0213b7b299ea242"}
+        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":"      遇见最好的家具","attributes":{"color":"#ffffff","size":"large","bold":true}},{"insert":"\n","attributes":{"indent":3,"header":1}},{"insert":"\t\t\t\t\t\t\t\t\t\t\t"},{"insert":"\n","attributes":{"header":4}},{"insert":"\t\t\t\t\t\t\t            "},{"insert":"超过200年家具制造经验，选用进口原料，为你的家创造温馨环境。","attributes":{"size":"large","color":"#ffffff"}},{"insert":"\n","attributes":{"indent":4,"header":4}},{"insert":"\n\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_792a25b66ea40384b4aec63e6aaa0f1f","parentkey":"VerticalGrid_b64f19b27a37cdf09a500d8a699cae4b"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_3d7ff068902299b8c9d8cc70d95695ba","flex":[6,6],"selfkey":"VerticalLayout_2d16288becb0bef46a5f4dc64eff093d","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
+        {"backgroundInfo":{"background":"#ffffff","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_d28d494b9d5b6d216245a3f8b69a2cd7","flex":[12],"selfkey":"VerticalLayout_b93900c6955a85f74f8670f881a24a2d","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_a78fab803894da5cfc60d0b6f5138f12","parentkey":"VerticalLayout_2d16288becb0bef46a5f4dc64eff093d"},
+        {"selfkey":"VerticalGrid_daa42ed6229b886a2fa9ba109c4e0311","parentkey":"VerticalLayout_b93900c6955a85f74f8670f881a24a2d"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"智利葡萄酒的名片","attributes":{"bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"Chile Wine ","attributes":{"bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"圣拉蒙贸易(武汉)有限公司是智利圣何 塞酒庄(San Jose de Apalta)在中国设立的代表 处及全职能市场销售公司，代表酒庄在中国市 场进行圣拉蒙(San Ramon)品牌和圣何塞(San Jose de Apalta)品牌的推广、产品营销和市场开发的 活动。公司坚持做专业的智利葡萄酒运营商， 坚持把智利葡萄酒做精做细，对智利葡萄酒的 特点进行精确的把控，所推广的葡萄酒产品曾 多次在国际品鉴大赛中获得金奖和国际著名酒 评人的高酒评分。公司所属的圣何塞酒庄创立 于1970年，隶属于智利前三大农业集团Agricola Santa Cristina Group，集团拥有400公顷的葡萄种 植园和600公顷的农庄果园，主营智利葡萄酒、 智利车厘子等具有智利特色代表的农产品，地 处智利著名的中央山谷里面的拉佩尔谷(Rapel Valley)的阿帕塔产区(Apalta)，世界90%以上 的佳美娜葡萄出产于此地，该产区以出产智利 的顶级佳美娜葡萄酒而闻名于世。 "},{"insert":"\n","attributes":{"header":2}},{"insert":"\n\n"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_6c5cc8d404ad407873f643d79461c25a","parentkey":"VerticalGrid_a78fab803894da5cfc60d0b6f5138f12"}
+        {"deltaDeltaValue":[{"insert":"关于桃核家具","attributes":{"size":"large","color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"桃核家具创始于 1818 年的毗陵，荟萃世界各地不同国家和不同时期的家居风格，为城市公寓、乡村别墅、花园洋房等不同户型提供了针对性的家居解决方案，满足不同人群关于生活的需求。","attributes":{"color":"#888888","bold":true}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":" 桃核家具是融自主产品设计、风格创意、生产制造、销售服务于一体的家居品牌，对每个环节负责，信守对顾客的承诺。涵盖整体供应链的同时，面向全球采购。从免费设计咨询到消费信贷服务，从预约本地配送安装到尊贵沙龙服务，提供家居整体解决方案，为消费者的家居梦想，我们期望做到更多。","attributes":{"color":"#888888","bold":true}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_43fc4030550388c1b1e34454dc48b1b6","parentkey":"VerticalGrid_daa42ed6229b886a2fa9ba109c4e0311"}
+    )
     )
     ),
 React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_9742235c59ac491c6a21d600cb4e56ff","parentkey":"VerticalLayout_2d16288becb0bef46a5f4dc64eff093d"},
+        "div",
+        {"style":{},"id":"37505258","selfkey":"div_89cfc77b45e07b68f9e13e682c76757b","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
 React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/1bfc866e43dafb3ebc77ea0c1082fa9c","selfkey":"ImageArea_f61cb9d2a907ac5784bc7b189f11247c","parentkey":"VerticalGrid_9742235c59ac491c6a21d600cb4e56ff"}
+        PreviewVerticalLayout,
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_faf88629325f399bcc296c81d5f854f2","flex":[12],"selfkey":"VerticalLayout_aaa27ff49b592c86c7583847546ef4f6","parentkey":"div_89cfc77b45e07b68f9e13e682c76757b"},
+React.createElement(
+        PreviewVerticalGrid,
+        {"selfkey":"VerticalGrid_f7ee81d72e6f10a3f227e99f683e9acb","parentkey":"VerticalLayout_aaa27ff49b592c86c7583847546ef4f6"},
+React.createElement(
+        PreviewTextArea,
+        {"deltaDeltaValue":[{"insert":"出色品质","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"选择桃核家具的理由","attributes":{"color":"#ff9900","size":"large"}},{"insert":"\n","attributes":{"align":"center","header":4}}],"readOnly":false,"selfkey":"TextArea_8f61757c3d50165d66edbc05eebf8fe0","parentkey":"VerticalGrid_f7ee81d72e6f10a3f227e99f683e9acb"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_48628806d570d91a1705b4d64eddb33f","flex":[6,6],"selfkey":"VerticalLayout_f8e6530fba43be4fb2b65071a3c8d2c2","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_339e7c9f8d6e8ecac11ccd166d16fa9a","flex":[4,4,4],"selfkey":"VerticalLayout_6e588e7c6212efd885326b5e62fc5692","parentkey":"div_89cfc77b45e07b68f9e13e682c76757b"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_aaf182c57ae6c1a9f61a390b64100de5","parentkey":"VerticalLayout_f8e6530fba43be4fb2b65071a3c8d2c2"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"圣何塞酒庄 ","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"header":2}}],"readOnly":false,"selfkey":"TextArea_9b3603c37330f67c7319a8fa606c9906","parentkey":"VerticalGrid_aaf182c57ae6c1a9f61a390b64100de5"}
-    ),
+        {"selfkey":"VerticalGrid_c7c6543b8c6cb74cd9c86ee42b08f2a8","parentkey":"VerticalLayout_6e588e7c6212efd885326b5e62fc5692"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/2c062dacd3b1e7e9effa785298edc857","selfkey":"ImageArea_9af565c1abe6e6c5e90a9196db74bc41","parentkey":"VerticalGrid_aaf182c57ae6c1a9f61a390b64100de5"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/ce0bb5d34c761870278be3fe870a89d1","selfkey":"ImageArea_f55dbe45d65662779c46566a679106e0","parentkey":"VerticalGrid_c7c6543b8c6cb74cd9c86ee42b08f2a8"}
+    ),
+React.createElement(
+        PreviewTextArea,
+        {"deltaDeltaValue":[{"insert":"高品质原料"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center","header":6}},{"insert":"进口高端健康材质","attributes":{"color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"100%纯天然高端原木，清新自然，不伤身。同时拥有很可靠的坚硬度，使用寿命长达100年！"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_ce33b3e3c6fa8cfd235732a17b5d1048","parentkey":"VerticalGrid_c7c6543b8c6cb74cd9c86ee42b08f2a8"}
     )
     ),
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_c2c1b3623b7b44ecaa8f04ac4e4673bc","parentkey":"VerticalLayout_f8e6530fba43be4fb2b65071a3c8d2c2"},
+        {"selfkey":"VerticalGrid_ee43c96dee811ee96801669c222decd3","parentkey":"VerticalLayout_6e588e7c6212efd885326b5e62fc5692"},
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/a96322da6ff86340da9a23bc2fbb59a6","selfkey":"ImageArea_63997c32d14564a017567cc4d8d7b168","parentkey":"VerticalGrid_ee43c96dee811ee96801669c222decd3"}
+    ),
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"圣何塞阿帕塔 "},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"(San Jose de Apalta)"},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"  坐落智利首都圣地亚哥旁140公里处的圣 何塞阿帕塔(San Jose de Apalta)酒庄，创立 于智利葡萄酒业技术快速发展的1970年，成立 初期以家族经营的模式致力于栽种精细的葡萄， 直至1994年，以丰富热情的栽植经验与专业酿 酒知识，以“执着完美”的精神开始生产高品 质且风格独具的葡萄酒。庄园的家族葡萄园位 于智利中部的拉佩尔谷产区(Rapel Valley)， 向来以独特的土壤及气候闻名。承袭家族经营 的方式使园内每一株葡萄树叶皆由人工细心及 完善地照顾，其超过30年树龄的枝藤更蕴育出 多种极具收藏价值的珍酿。总年产量约320万 升，至今已成功行销全球各地，成为智利葡萄 酒外销酒庄的翘楚之一，并赢得顶级葡萄酒的 美誉。  "},{"insert":"\n","attributes":{"header":2}}],"readOnly":false,"selfkey":"TextArea_4ee2ed93549d298f20b8be110e9ba988","parentkey":"VerticalGrid_c2c1b3623b7b44ecaa8f04ac4e4673bc"}
+        {"deltaDeltaValue":[{"insert":"灵活易安装"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"像搭积木一样简单","attributes":{"color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"100%纯天然高端原木，清新自然，不伤身。同时拥有很可靠的坚硬度，使用寿命长达100年！"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_66ba0e8063058864196ac29551de5e5c","parentkey":"VerticalGrid_ee43c96dee811ee96801669c222decd3"}
+    )
+    ),
+React.createElement(
+        PreviewVerticalGrid,
+        {"selfkey":"VerticalGrid_61f8ec74d0b5e1bc16abf3a6acc90731","parentkey":"VerticalLayout_6e588e7c6212efd885326b5e62fc5692"},
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/15671088902597f03ce5934953d55470","selfkey":"ImageArea_ef8fadd409e8062cc6226abd790b7e9a","parentkey":"VerticalGrid_61f8ec74d0b5e1bc16abf3a6acc90731"}
+    ),
+React.createElement(
+        PreviewTextArea,
+        {"deltaDeltaValue":[{"insert":"北欧极简设计风"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center","header":6}},{"insert":"引领新的家装潮流","attributes":{"color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"我们专业的设计师深得设计理念，将极简精神融入产品中，为你的家增添时代感。"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_9d3eceb03d8fd902f6b4c57fe75491c4","parentkey":"VerticalGrid_61f8ec74d0b5e1bc16abf3a6acc90731"}
+    )
+    )
+    )
+    ),
+React.createElement(
+        "div",
+        {"style":{},"id":"11260632","selfkey":"div_94c7e90d466cb3921f0b1e7592463fd2","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
+React.createElement(
+        PreviewVerticalLayout,
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_cc73ac8969b32551e216c9276e46f23b","flex":[12],"selfkey":"VerticalLayout_e121d42e05f2fef96e98bd2235e1e800","parentkey":"div_94c7e90d466cb3921f0b1e7592463fd2"},
+React.createElement(
+        PreviewVerticalGrid,
+        {"selfkey":"VerticalGrid_96799f064fad5bc20198b954d7123881","parentkey":"VerticalLayout_e121d42e05f2fef96e98bd2235e1e800"},
+React.createElement(
+        PreviewTextArea,
+        {"deltaDeltaValue":[{"insert":"家具展示","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"各个角度，艺术呈现","attributes":{"color":"#ffc266"}},{"insert":"\n","attributes":{"align":"center","header":3}}],"readOnly":false,"selfkey":"TextArea_bee4898270d3edc6e87a8a2ee95c40e9","parentkey":"VerticalGrid_96799f064fad5bc20198b954d7123881"}
+    )
+    )
+    ),
+React.createElement(
+        PreviewPhotoGallery,
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"imgContainerMargin":5,"intensity":4,"galleryWidth":72,"id":"PhotoGallery_c9d2a355dcd85e47cb2cd5d17cf171f2","selfkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43","parentkey":"div_94c7e90d466cb3921f0b1e7592463fd2"},
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/e27abd953177fbf27ebfad403f9fffb6","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_c8cafada398f37af112abde70be83037","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/2156d4338c4c758b73c1a9d79289b2d0","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_df6c247f0aded41898f4c3edbca61558","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/4fb134a179cf85076c365e4b5a37247c","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_e9737408264fe52401786f8f5dc029e4","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/f2fbb887e763ab86a774611144a1ac5a","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_169ab3a20711a1fe0aeb4a7c60006f5b","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/0572b493c77226fa00d5c8c860ae7a6b","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_a9dddf26d5faf4aa7c6125ef78523080","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/3f3caae8ef2388500705042c027b561a","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_f865ed7d150372b3759112c822ce7b4f","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/28f1572f1bd1a32adfca33ab3cf3d476","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_b04575848480803be2a28610fd0c12e0","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/331473f9e4d44c1facf3d93d51c390c2","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_96fc5ecc897cfd58a0524886bfd3f588","parentkey":"PhotoGallery_7e72c4c23f2e055b5b36a1527dc8ce43"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/1e59b831cea08d6cb87f0e331fe2cb61)","backgroundType":"image","imageInfo":{"width":1712,"height":294},"fillType":"stretch","enableParallex":false},"id":"VerticalLayout_cc9cf35ab755bbd1fe6c901143e6b7b6","flex":[12],"selfkey":"VerticalLayout_cc9cf35ab755bbd1fe6c901143e6b7b6","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_05ed66094b9cf867440e6adc5ed09e2c","flex":[12],"selfkey":"VerticalLayout_df2e92a7f38d0afbd863372b6b97681d","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_6d40c1967b6164119894d5c7dc1404f4","parentkey":"VerticalLayout_cc9cf35ab755bbd1fe6c901143e6b7b6"},
+        {"selfkey":"VerticalGrid_38c799a59336603b266c78913f67038d","parentkey":"VerticalLayout_df2e92a7f38d0afbd863372b6b97681d"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_3f4b3946016d4e65483144bf6e6ff5e1","parentkey":"VerticalGrid_6d40c1967b6164119894d5c7dc1404f4"}
+        {"deltaDeltaValue":[{"insert":"常见问题","attributes":{"color":"#ff9900","size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"关于桃核家具的详细说明","attributes":{"color":"#bbbbbb","bold":true}},{"insert":"\n\n","attributes":{"align":"center","header":3}},{"insert":"出售的家具售后服务是怎么样的？"},{"insert":"\n","attributes":{"header":3}},{"insert":"\n在出售后的30天内，可自由更换同款的其他规格、款式设计的产品。\n此外，在使用的2年内，出现产品质量性的问题，都可以享受全额退款服务！\n\n是否提供定制化的服务？"},{"insert":"\n","attributes":{"header":3}},{"insert":"\n我们提供定制化的需求，如果您希望更深度的定制，例如颜色、材质、规格，请在最下方联系我们，我们的设计团队会根据您的需求为你报价。期待您的来信！\n\n线下配送服务"},{"insert":"\n","attributes":{"header":3}},{"insert":"\n您可以选择自提或者标准快递服务，通常快递服务达到时间将根据您所在的位置决定。\n全国购物满600元即可享受包邮服务。\n\n"},{"insert":"\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_cbb743349d1654533f48c82ef0011582","parentkey":"VerticalGrid_38c799a59336603b266c78913f67038d"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_a98ac090c039c9fc45e4e393460e3c92","flex":[12],"selfkey":"VerticalLayout_a98ac090c039c9fc45e4e393460e3c92","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_c265ed96dd414c985e4f5c3f00002e4c","flex":[12],"selfkey":"VerticalLayout_2b3f746b2c42215fb505974222b2ceac","parentkey":"Root_df450442d273013c2ef27fa9767948c6"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_158f2cffaf3928273f877505d6d30bff","parentkey":"VerticalLayout_a98ac090c039c9fc45e4e393460e3c92"},
+        {"selfkey":"VerticalGrid_931d17a31f9ff62d24e275a19a06e8d5","parentkey":"VerticalLayout_2b3f746b2c42215fb505974222b2ceac"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"圣何塞阿帕塔酒庄葡萄酒生产基地 ","attributes":{"bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"The Wine Production Factory ","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}}],"readOnly":false,"selfkey":"TextArea_c67d5002aa95cef6b50db3f91f1b2625","parentkey":"VerticalGrid_158f2cffaf3928273f877505d6d30bff"}
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#b1d3db","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_90ae6bebc1338ee7d8050079710b072a","flex":[4,4,4],"selfkey":"VerticalLayout_90ae6bebc1338ee7d8050079710b072a","parentkey":"Root_fcef427b70ee741633101ad0ce93bebd"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_7117084d8d10dccb29d908edbbfc23e1","parentkey":"VerticalLayout_90ae6bebc1338ee7d8050079710b072a"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/ae3a74ad2d8d89ed4bcb04a828edfbef","selfkey":"ImageArea_68e0e6e77305ae152873fb0b78ad5341","parentkey":"VerticalGrid_7117084d8d10dccb29d908edbbfc23e1"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_87f1f45598d4f38934c5cfefaa00a4b9","parentkey":"VerticalLayout_90ae6bebc1338ee7d8050079710b072a"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/765e760ab2fc247682cb1e9bdc4d534a","selfkey":"ImageArea_943cfeae2383dfd84941080a49b075a6","parentkey":"VerticalGrid_87f1f45598d4f38934c5cfefaa00a4b9"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_da7fb7b21eb64cb157c72458f45bf210","parentkey":"VerticalLayout_90ae6bebc1338ee7d8050079710b072a"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/8/cfd77b61722815b42c70c5998888d61c","selfkey":"ImageArea_b6b6ab6321294b5e95dff20628c76986","parentkey":"VerticalGrid_da7fb7b21eb64cb157c72458f45bf210"}
+        {"deltaDeltaValue":[{"insert":"联系我们","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"我们与您一样，爱上你的家"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"https://www.taohespace.com","attributes":{"font":"serif"}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n\n\n\n\n\n","attributes":{"align":"center"}},{"insert":"\n\n\n\n\n\n\n\n\n\n—————————————————————————————————————————————————————————————————————"},{"insert":"\n","attributes":{"align":"center"}},{"insert":"假装有备案的底部"},{"insert":"\n","attributes":{"align":"center"}},{"insert":"Copyright 2018 -- Joey"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_6217d3b6896a68d078587b2fc9ab2b65","parentkey":"VerticalGrid_931d17a31f9ff62d24e275a19a06e8d5"}
     )
     )
     )
