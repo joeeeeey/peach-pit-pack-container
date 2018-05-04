@@ -16,7 +16,6 @@
 // }
 // {"native":false,"nodeName":"VerticalLayout","props":{}}
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Grid from 'material-ui/Grid';
 import backgroundSetting from '../../layoutSettings/backgroundSetting'
 
@@ -24,40 +23,38 @@ import backgroundSetting from '../../layoutSettings/backgroundSetting'
 // Layout 的公共样式， 可以抽离
 // 需要占据主屏幕 80% 位置左右两侧自动 margin
 // TODO  padding top bottom 如何在屏幕变小时自动变小
-const layoutStyle = { margin: '0 auto', width: '84%', flexGrow: 1, padding: '22px 0' }
+// const layoutStyle = { margin: '0 auto', width: '84%', flexGrow: 1, padding: '22px 0' }
 
 const defalutFlexLayout = [8, 4]
 
 
 export default class PreviewVerticalLayout extends Component {
+  // getLayoutDivStyle = () => {
+  //   if (this.props.fullWithChilren) {
+  //     return { margin: '0 0', width: '100%', flexGrow: 1, padding: '0 0' }
+  //   } else {
+  //     return { margin: '0 auto', width: '84%', flexGrow: 1, padding: '5% 0' }
+  //   }
+  // }
+
   getLayoutDivStyle = () => {
     if (this.props.fullWithChilren) {
-      return { margin: '0 0', width: '100%', flexGrow: 1, padding: '0 0' }
+      return 'verticalLayoutContainerFullWithChilren'
     } else {
-      return { margin: '0 auto', width: '84%', flexGrow: 1, padding: '22px 0' }
+      return 'verticalLayoutContainerDefault'
     }
   }
-
   render() {
     const { containerDirection = 'row' } = this.props
 
     const { backgroundInfo, id } = this.props
-
-    const {
-      background,
-      backgroundType,
-      // 背景是图片的时才需要的属性
-      imageInfo,
-      fillType,
-      enableParallex,
-    } = backgroundInfo
 
     this.flex = this.props.flex || defalutFlexLayout
 
     const backgroundStyle = Object.assign({ position: 'relative' }, backgroundSetting.getBackgroundStyle(backgroundInfo))
     return (
       <div style={backgroundStyle} id={id}>
-        <div style={this.getLayoutDivStyle()}>
+        <div  className={this.getLayoutDivStyle()}>
           <Grid container direction={containerDirection} >
             {this.props.children &&
               React.Children.toArray(this.props.children).map((child, index) => {

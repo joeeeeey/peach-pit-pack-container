@@ -1,435 +1,185 @@
     
 import React, { Component } from 'react';
 import withRoot from '../withRoot';    
+import PreviewRoot from '../components/preview/root'
+import PreviewNavBar from '../components/preview/navBar'
+import PreviewImageArea from '../components/preview/imageArea'
+import PreviewTextArea from '../components/preview/textArea'
 import PreviewVerticalLayout from '../components/preview/verticalLayout'
 import PreviewVerticalGrid from '../components/preview/verticalGrid'
-import PreviewTextArea from '../components/preview/textArea'
-import PreviewImageArea from '../components/preview/imageArea'
 import PreviewPhotoGallery from '../components/preview/photoGallery'
     
 class Index extends Component {
   render() {
     return (
     React.createElement(
-        "div",
-        {"style":{},"selfkey":"Root_a87aa71c29eac31c1624dd034911e3c0","parentkey":"root"},
+        PreviewRoot,
+        {"style":{"paddingTop":64},"selfkey":"Root_e9a3766e1f73550c0e0add5392bea0ea","parentkey":"root"},
 React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/88868eea112f1528576458294f9e09ae)","backgroundType":"image","imageInfo":{"width":800,"height":533},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_08ed82ac646dff6be8598d2f28e83a3a","flex":[12],"selfkey":"VerticalLayout_09f3d027c00d75ef5ff66e0ed65134d0","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_51ac97d3de93e8e25087094d71983732","parentkey":"VerticalLayout_09f3d027c00d75ef5ff66e0ed65134d0"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_36d21249f5581bc63e7d85482a157e29","parentkey":"VerticalGrid_51ac97d3de93e8e25087094d71983732"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n"},{"insert":"\n\n\n\n\n\n\n\n","attributes":{"align":"center"}},{"insert":"源于自然的味觉盛宴","attributes":{"size":"large","color":"#ffffff"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"Good Taste From Nature","attributes":{"font":"serif","color":"#ffffff","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n\n\n\n\n\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_e0f0014fdd66bfff6ee77f58263550a9","parentkey":"VerticalGrid_51ac97d3de93e8e25087094d71983732"}
-    )
-    )
-    ),
-React.createElement(
-        "div",
-        {"style":{"paddingTop":0},"selfkey":"div_61657b9d16e8a5f8ca8dc0c40b5d2e3d","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/b78496d6f8b29f50c147b15dc0ef7a3c)","backgroundType":"image","imageInfo":{"width":800,"height":619},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_24c2557eeb6d865a61a54b271667bc1c","flex":[6,6],"fullWithChilren":true,"selfkey":"VerticalLayout_2a1f78678f491712dd30c6eaa3e01130","parentkey":"div_61657b9d16e8a5f8ca8dc0c40b5d2e3d"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_03db351af3a7c574f32525a58cabeb67","parentkey":"VerticalLayout_2a1f78678f491712dd30c6eaa3e01130"},
-React.createElement(
-        "div",
-        {"style":{"paddingTop":0},"selfkey":"div_272bee4c256be929af323a5a770a4cae","parentkey":"VerticalGrid_03db351af3a7c574f32525a58cabeb67"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{"width":1024,"height":683},"fillType":"stretch","enableParallex":true},"flex":[4,4,4],"id":"VerticalLayout_c1c0200c882de1025430dcf9ddb90e63","fullWithChilren":true,"selfkey":"VerticalLayout_b62ee10d54bd215f98c0837cf1f9c4c5","parentkey":"div_272bee4c256be929af323a5a770a4cae"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_9a526ebe9b7c3c230b024de9927357b2","parentkey":"VerticalLayout_b62ee10d54bd215f98c0837cf1f9c4c5"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_b4d72ed73074f352a5733becd7a68078","parentkey":"VerticalGrid_9a526ebe9b7c3c230b024de9927357b2"}
-    ),
+        PreviewNavBar,
+        {"affectRoot":{"paddingTop":64},"rootChildren":[{"id":"VerticalLayout_5738168ec8888a0e454deba5c8482b91","name":"首页","nodeName":"VerticalLayout"},{"id":"VerticalLayout_d28d494b9d5b6d216245a3f8b69a2cd7","name":"关于","nodeName":"VerticalLayout"},{"id":"37505258","name":"品质","nodeName":"div"},{"id":"11260632","name":"展示","nodeName":"div"},{"id":"VerticalLayout_05ed66094b9cf867440e6adc5ed09e2c","name":"常见问题","nodeName":"VerticalLayout"},{"id":"VerticalLayout_c265ed96dd414c985e4f5c3f00002e4c","name":"联系我们","nodeName":"VerticalLayout"}],"selfkey":"NavBar_a53e1aace249fa8c04dc278d3f6c6792","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/3852d5b242f61608cd4202bccac5e835","selfkey":"ImageArea_fb50e5f9a30d9ccb7183edd6177bf500","parentkey":"VerticalGrid_9a526ebe9b7c3c230b024de9927357b2"}
+        {"imageStyle":{"maxWidth":130,"maxHeight":40.6},"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/8419e0cee9e352e903578504e8b0fefc","selfkey":"ImageArea_96343e98fab6c7478fba724639b0d6d4","parentkey":"NavBar_a53e1aace249fa8c04dc278d3f6c6792"}
     ),
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"某种果子","attributes":{"size":"large","font":"serif"}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n"},{"insert":"来自沼地的野生浆果，富含多种维他命。","attributes":{"color":"rgba(0, 0, 0, 0.85)","font":"serif"}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_bc714af6e28430144a5398d7833bfe4a","parentkey":"VerticalGrid_9a526ebe9b7c3c230b024de9927357b2"}
+        {"formats":["header","font","size","bold","italic","underline","strike","blockquote","bullet","link","color","align","script","direction","clean"],"toolbarAbove":false,"toolbarOverlayStyle":{"bottom":-75},"toolbarStyle":{"width":300},"deltaDeltaValue":[{"insert":"桃核家具"},{"insert":"\n","attributes":{"header":2}}],"selfkey":"TextArea_9f175ccfca7e1237bd56bab4d7385e09","parentkey":"NavBar_a53e1aace249fa8c04dc278d3f6c6792"}
     )
     ),
+React.createElement(
+        PreviewVerticalLayout,
+        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/eb5662fc91d83e20c700ca23376b1cbc)","backgroundType":"image","imageInfo":{"width":1060,"height":666},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_5738168ec8888a0e454deba5c8482b91","flex":[12],"selfkey":"VerticalLayout_056095ed4ddcefb473c6b6bea9b990b5","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_3ae8b943fbfb8aeba7a180c6e9b75bbf","parentkey":"VerticalLayout_b62ee10d54bd215f98c0837cf1f9c4c5"},
+        {"selfkey":"VerticalGrid_9076d0ed80a492737c577ea344ba62e3","parentkey":"VerticalLayout_056095ed4ddcefb473c6b6bea9b990b5"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_7f2dcd1557258c2c1bf7be3500a45db6","parentkey":"VerticalGrid_3ae8b943fbfb8aeba7a180c6e9b75bbf"}
-    ),
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/74f59d602ec5c469fbf720dcaccd6a17","selfkey":"ImageArea_f27c68b9fd04b1512726e6ca6844ad9d","parentkey":"VerticalGrid_3ae8b943fbfb8aeba7a180c6e9b75bbf"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"橙子","attributes":{"size":"large","font":"serif"}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n"},{"insert":"你先留在在此地不要走动。","attributes":{"font":"serif"}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_b873a1cc54cd47cdb4ccad82fec0e783","parentkey":"VerticalGrid_3ae8b943fbfb8aeba7a180c6e9b75bbf"}
+        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":"      遇见最好的家具","attributes":{"color":"#ffffff","size":"large","bold":true}},{"insert":"\n","attributes":{"indent":3,"align":"center","header":1}},{"insert":"\t\t\t\t\t\t\t\t\t\t"},{"insert":"\n\n","attributes":{"header":4}},{"insert":"\t\t\t\t\t\t\t            "},{"insert":"超过200年家具制造经验，选用进口原料，为你的家创造温馨环境。","attributes":{"size":"large","color":"#ffffff"}},{"insert":"\n","attributes":{"align":"center","header":4}},{"insert":"\n\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_cda3b8690c05ebcbc50de1e759b8accf","parentkey":"VerticalGrid_9076d0ed80a492737c577ea344ba62e3"}
+    )
     )
     ),
+React.createElement(
+        PreviewVerticalLayout,
+        {"backgroundInfo":{"background":"#ffffff","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_d28d494b9d5b6d216245a3f8b69a2cd7","flex":[12],"selfkey":"VerticalLayout_200db6f79a3ec849f377b2be20b5382c","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_85ce501332ad7a6859b9432e9b1ec8fb","parentkey":"VerticalLayout_b62ee10d54bd215f98c0837cf1f9c4c5"},
+        {"selfkey":"VerticalGrid_8163af90a1382ee094ae9ba4f45039f5","parentkey":"VerticalLayout_200db6f79a3ec849f377b2be20b5382c"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_b34c6ff3d6dc69c978019f664432fd90","parentkey":"VerticalGrid_85ce501332ad7a6859b9432e9b1ec8fb"}
-    ),
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/1b76c2ca311f81827670e2ab6721bef0","selfkey":"ImageArea_637f4d9b83aadd1e0c997245ae62035d","parentkey":"VerticalGrid_85ce501332ad7a6859b9432e9b1ec8fb"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"覆盆子","attributes":{"size":"large","font":"serif"}},{"insert":"\n\n","attributes":{"align":"center","header":3}},{"insert":"来自沼地的野生覆盆子，富含多种维他命。","attributes":{"font":"serif"}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_d67e9d5845c09cd4ae84aa5ccbed8bfe","parentkey":"VerticalGrid_85ce501332ad7a6859b9432e9b1ec8fb"}
-    )
-    )
+        {"deltaDeltaValue":[{"insert":"关于桃核家具","attributes":{"size":"large","color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"桃核家具创始于 1818 年的毗陵，荟萃世界各地不同国家和不同时期的家居风格，为城市公寓、乡村别墅、花园洋房等不同户型提供了针对性的家居解决方案，满足不同人群关于生活的需求。","attributes":{"color":"#888888","bold":true}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":" 桃核家具是融自主产品设计、风格创意、生产制造、销售服务于一体的家居品牌，对每个环节负责，信守对顾客的承诺。涵盖整体供应链的同时，面向全球采购。从免费设计咨询到消费信贷服务，从预约本地配送安装到尊贵沙龙服务，提供家居整体解决方案，为消费者的家居梦想，我们期望做到更多。","attributes":{"color":"#888888","bold":true}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_084bb1a3084f9fca9730c84f6b5df9d9","parentkey":"VerticalGrid_8163af90a1382ee094ae9ba4f45039f5"}
     )
     )
     ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_158a57dc07b1c02c60872b9bd3730ceb","parentkey":"VerticalLayout_2a1f78678f491712dd30c6eaa3e01130"},
 React.createElement(
         "div",
-        {"style":{"paddingTop":0},"selfkey":"div_919fe35b0572dc379113abc3546604c7","parentkey":"VerticalGrid_158a57dc07b1c02c60872b9bd3730ceb"},
+        {"style":{},"id":"37505258","selfkey":"div_20da1a49af3e69a3ad8aaffbba589328","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/0cfb7f599d13748e5525115d3bbd582e)","backgroundType":"image","imageInfo":{"width":800,"height":619},"fillType":"stretch","enableParallex":true},"flex":[3,6,3],"id":"VerticalLayout_4155df45a4adb3205c2c14ce77e15e72","fullWithChilren":true,"selfkey":"VerticalLayout_be1ee0e1f45c0858d70d8c64aad56d33","parentkey":"div_919fe35b0572dc379113abc3546604c7"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_faf88629325f399bcc296c81d5f854f2","flex":[12],"selfkey":"VerticalLayout_934cc68c92879fc312a51c359c6d2f0c","parentkey":"div_20da1a49af3e69a3ad8aaffbba589328"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_87e71e14e5913765149c0b915e2ccf8a","parentkey":"VerticalLayout_be1ee0e1f45c0858d70d8c64aad56d33"},
+        {"selfkey":"VerticalGrid_bc322c7ade4c09149f4a72d00ac65e2d","parentkey":"VerticalLayout_934cc68c92879fc312a51c359c6d2f0c"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_42af52e667d8c1d4567c37c31de331e0","parentkey":"VerticalGrid_87e71e14e5913765149c0b915e2ccf8a"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_3c830a0771c6fbb8d0fb65b7099e7bc6","parentkey":"VerticalLayout_be1ee0e1f45c0858d70d8c64aad56d33"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_435857d77b65de48b2876bcbbaac741a","parentkey":"VerticalGrid_3c830a0771c6fbb8d0fb65b7099e7bc6"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n\n\n\n","attributes":{"align":"center"}},{"insert":"新鲜食材","attributes":{"color":"#ffffff","size":"large"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n"},{"insert":"\n\n\n\n\n\n\n\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_79a63f68bc2d61bbf211f6c2a47f196a","parentkey":"VerticalGrid_3c830a0771c6fbb8d0fb65b7099e7bc6"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_6e596dc0f58418bc05112e7b9a580088","parentkey":"VerticalLayout_be1ee0e1f45c0858d70d8c64aad56d33"}
-    )
-    )
+        {"deltaDeltaValue":[{"insert":"出色品质","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"选择桃核家具的理由","attributes":{"color":"#ff9900","size":"large"}},{"insert":"\n","attributes":{"align":"center","header":4}}],"readOnly":false,"selfkey":"TextArea_81fa53dedf87f5fbaa5a9cfa1ef979e1","parentkey":"VerticalGrid_bc322c7ade4c09149f4a72d00ac65e2d"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_2fae383adf324d3ff2dbdc786d56c2e1","flex":[6,6],"fullWithChilren":true,"selfkey":"VerticalLayout_10917ce6ee92a89f89a2f5bccf1be2be","parentkey":"div_61657b9d16e8a5f8ca8dc0c40b5d2e3d"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_339e7c9f8d6e8ecac11ccd166d16fa9a","flex":[4,4,4],"selfkey":"VerticalLayout_1728201086bd15b502ddf5ef2dc2bb74","parentkey":"div_20da1a49af3e69a3ad8aaffbba589328"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_fb2e84b2045c118b100c976206665f10","parentkey":"VerticalLayout_10917ce6ee92a89f89a2f5bccf1be2be"},
-React.createElement(
-        "div",
-        {"style":{"paddingTop":0},"selfkey":"div_3d6274f3c01faaeeacadad71109f5a1b","parentkey":"VerticalGrid_fb2e84b2045c118b100c976206665f10"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{"width":640,"height":426},"fillType":"stretch","enableParallex":true},"flex":[6,6],"id":"VerticalLayout_0c5717a0543617a6ee399cfea82f50e9","fullWithChilren":true,"selfkey":"VerticalLayout_a6cc459f43c183d20cd1210ccfccd1a1","parentkey":"div_3d6274f3c01faaeeacadad71109f5a1b"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_ce12ddccd049882795b91d16cfc26230","parentkey":"VerticalLayout_a6cc459f43c183d20cd1210ccfccd1a1"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":2}}],"readOnly":false,"selfkey":"TextArea_49898c7e2873210891de5f38e3f6910d","parentkey":"VerticalGrid_ce12ddccd049882795b91d16cfc26230"}
-    ),
+        {"selfkey":"VerticalGrid_ad43026fa709dacb0a4c741dff7d24b5","parentkey":"VerticalLayout_1728201086bd15b502ddf5ef2dc2bb74"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/4855f79832c6202ea1c4ea27b40ea98a","selfkey":"ImageArea_a78add38f324b04dd3a141d0c030e22c","parentkey":"VerticalGrid_ce12ddccd049882795b91d16cfc26230"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/ce0bb5d34c761870278be3fe870a89d1","selfkey":"ImageArea_08649efa0d050a192175f0f65a7b75f2","parentkey":"VerticalGrid_ad43026fa709dacb0a4c741dff7d24b5"}
     ),
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":2}}],"readOnly":false,"selfkey":"TextArea_a969720a6a8ba79afe85c9ae0dba109c","parentkey":"VerticalGrid_ce12ddccd049882795b91d16cfc26230"}
+        {"deltaDeltaValue":[{"insert":"高品质原料"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center","header":6}},{"insert":"进口高端健康材质","attributes":{"color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"100%纯天然高端原木，清新自然，不伤身。同时拥有很可靠的坚硬度，使用寿命长达100年！"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_490ca72173543cd2fb3e638a0139ce1c","parentkey":"VerticalGrid_ad43026fa709dacb0a4c741dff7d24b5"}
+    )
     ),
+React.createElement(
+        PreviewVerticalGrid,
+        {"selfkey":"VerticalGrid_12c1169a1b3e062ec59c9729590a3d72","parentkey":"VerticalLayout_1728201086bd15b502ddf5ef2dc2bb74"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/01837538fa5495869b70f99f9c69158d","selfkey":"ImageArea_c267078da696eb056325df191b70d07e","parentkey":"VerticalGrid_ce12ddccd049882795b91d16cfc26230"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/a96322da6ff86340da9a23bc2fbb59a6","selfkey":"ImageArea_a1c9d8c1b7f12d42728f50392161e125","parentkey":"VerticalGrid_12c1169a1b3e062ec59c9729590a3d72"}
+    ),
+React.createElement(
+        PreviewTextArea,
+        {"deltaDeltaValue":[{"insert":"灵活易安装"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"像搭积木一样简单","attributes":{"color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"100%纯天然高端原木，清新自然，不伤身。同时拥有很可靠的坚硬度，使用寿命长达100年！"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_a688aba0f2266d34f86367ce7d2593c6","parentkey":"VerticalGrid_12c1169a1b3e062ec59c9729590a3d72"}
     )
     ),
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_d39fb31e1634270b96824c214768ae8b","parentkey":"VerticalLayout_a6cc459f43c183d20cd1210ccfccd1a1"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":2}}],"readOnly":false,"selfkey":"TextArea_aef148e0e179fa20e506483ddf05dc8b","parentkey":"VerticalGrid_d39fb31e1634270b96824c214768ae8b"}
-    ),
+        {"selfkey":"VerticalGrid_0c3e620a7e540e49bb6a247fc4926dcd","parentkey":"VerticalLayout_1728201086bd15b502ddf5ef2dc2bb74"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/669c20279da73738d4ea5d7c53aa182a","selfkey":"ImageArea_025b222d1beda524f23a0ece5868dbfb","parentkey":"VerticalGrid_d39fb31e1634270b96824c214768ae8b"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/15671088902597f03ce5934953d55470","selfkey":"ImageArea_4c36cf96784db215621041b8dcda1161","parentkey":"VerticalGrid_0c3e620a7e540e49bb6a247fc4926dcd"}
     ),
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":2}}],"readOnly":false,"selfkey":"TextArea_666194cd3efeb3420d014a90861a6da0","parentkey":"VerticalGrid_d39fb31e1634270b96824c214768ae8b"}
-    ),
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/layout/tmp/156e48287b03e2511c324cd79ca047ec","selfkey":"ImageArea_d792d9050b13409b42f6352f1d30121e","parentkey":"VerticalGrid_d39fb31e1634270b96824c214768ae8b"}
-    )
+        {"deltaDeltaValue":[{"insert":"北欧极简设计风"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center","header":6}},{"insert":"引领新的家装潮流","attributes":{"color":"#ff9900","bold":true}},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"我们专业的设计师深得设计理念，将极简精神融入产品中，为你的家增添时代感。"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_4582aea6f2a9748eeda4d7e77f5ca60e","parentkey":"VerticalGrid_0c3e620a7e540e49bb6a247fc4926dcd"}
     )
     )
     )
     ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_cc8666869304883cd40b77ffea338cc6","parentkey":"VerticalLayout_10917ce6ee92a89f89a2f5bccf1be2be"},
 React.createElement(
         "div",
-        {"style":{"paddingTop":0},"selfkey":"div_4c95e13e1a7018a14dce040b07879280","parentkey":"VerticalGrid_cc8666869304883cd40b77ffea338cc6"},
+        {"style":{},"id":"11260632","selfkey":"div_033965c3be5f0231c1ab11c1440f7d27","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{"width":1024,"height":683},"fillType":"stretch","enableParallex":true},"flex":[12],"id":"VerticalLayout_c6df6d3b7900f5624eb2bc3c0f20dbf1","fullWithChilren":true,"selfkey":"VerticalLayout_839ca6d7b4c004ee21d51c1ed0c1ed7c","parentkey":"div_4c95e13e1a7018a14dce040b07879280"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_cc73ac8969b32551e216c9276e46f23b","flex":[12],"selfkey":"VerticalLayout_645164e62abd55723f48006917872c3b","parentkey":"div_033965c3be5f0231c1ab11c1440f7d27"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_604c698d3e8ab4641724f6a22ff45a7b","parentkey":"VerticalLayout_839ca6d7b4c004ee21d51c1ed0c1ed7c"},
+        {"selfkey":"VerticalGrid_ae5fa8a6c98bd331e3d9fe1cbe114ce3","parentkey":"VerticalLayout_645164e62abd55723f48006917872c3b"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n\n\n\n\n\n\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"上乘美味","attributes":{"font":"serif","size":"large","color":"#444444","bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_e68c2ceb3cb0558c194fb0b9e73122d6","parentkey":"VerticalGrid_604c698d3e8ab4641724f6a22ff45a7b"}
+        {"deltaDeltaValue":[{"insert":"家具展示","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"各个角度，艺术呈现","attributes":{"color":"#ffc266"}},{"insert":"\n","attributes":{"align":"center","header":3}}],"readOnly":false,"selfkey":"TextArea_e2056eb7e00cb5d2f47eb55c7224d4f6","parentkey":"VerticalGrid_ae5fa8a6c98bd331e3d9fe1cbe114ce3"}
     )
-    )
-    )
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_8fd76478e845b238e40556019d428696","fullWithChilren":false,"selfkey":"VerticalLayout_a3c2ad5605c7aafbcc6a2f532b17ef95","parentkey":"div_61657b9d16e8a5f8ca8dc0c40b5d2e3d"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_f22aaa84a9a6e73b17de1e71ba35e8eb","parentkey":"VerticalLayout_a3c2ad5605c7aafbcc6a2f532b17ef95"}
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_6a4ad463cdb82a867643501d25b4bffa","parentkey":"VerticalLayout_a3c2ad5605c7aafbcc6a2f532b17ef95"}
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/6efc5c6ba407c994640c2f3fc97faf50)","backgroundType":"image","imageInfo":{"width":800,"height":672},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_bdcaf1674de7a98b6e18290782d53756","flex":[2,8,2],"selfkey":"VerticalLayout_d4d97040d0ad0a74169ff627795f358a","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_5ad7c84dcddacc29177d9bb668ce55bf","parentkey":"VerticalLayout_d4d97040d0ad0a74169ff627795f358a"}
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_d88dc7a9ad76172ca5b36514aed573f1","parentkey":"VerticalLayout_d4d97040d0ad0a74169ff627795f358a"},
-React.createElement(
-        "div",
-        {"style":{},"selfkey":"div_48caaea06459fc9f277d629d5ed85515","parentkey":"VerticalGrid_d88dc7a9ad76172ca5b36514aed573f1"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"flex":[12],"id":"VerticalLayout_0b358f82f534eb44333037dc20ac40f3","selfkey":"VerticalLayout_abb190a2ce0e801b2b0513ec1cd38b4a","parentkey":"div_48caaea06459fc9f277d629d5ed85515"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_1fe112c69b29fac4afe530ff9db1b85c","parentkey":"VerticalLayout_abb190a2ce0e801b2b0513ec1cd38b4a"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"特色招牌","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_ef5cfd480a95f19a61e8c9c61f0d075c","parentkey":"VerticalGrid_1fe112c69b29fac4afe530ff9db1b85c"}
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"flex":[4,4,4],"id":"VerticalLayout_887a53814fafdfeda4b4c7bfbb3bfcd7","selfkey":"VerticalLayout_ee17d0a94be92baf8a5c6312a4632482","parentkey":"div_48caaea06459fc9f277d629d5ed85515"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_ca0d8447f879b32dd8a8ab483d46596a","parentkey":"VerticalLayout_ee17d0a94be92baf8a5c6312a4632482"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/1d56c81d01ced660d20e565d97937a4f","selfkey":"ImageArea_b7336934ba157f73882f5dfeb5bfc3b6","parentkey":"VerticalGrid_ca0d8447f879b32dd8a8ab483d46596a"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"特色桃子"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"提示: 此处需要无背景的 png 图片。来自沼地的野生桃子，富含多种维他命。"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_d8c3c02d97e2c36086be5c8abd0c3313","parentkey":"VerticalGrid_ca0d8447f879b32dd8a8ab483d46596a"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_afec07f2a7e2debf35d97a87536db63e","parentkey":"VerticalLayout_ee17d0a94be92baf8a5c6312a4632482"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/cab46027fc85f528ee9d76a1d3d96133","selfkey":"ImageArea_137958e0b5b988c36681a02afe8fad74","parentkey":"VerticalGrid_afec07f2a7e2debf35d97a87536db63e"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"特色桃子"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"提示: 此处需要无背景的 png 图片。来自沼地的野生桃子，富含多种维他命。"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_e87a8683675355ff416da83f8a36e982","parentkey":"VerticalGrid_afec07f2a7e2debf35d97a87536db63e"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_8b9d49e38687ce8145bb86865059ac6b","parentkey":"VerticalLayout_ee17d0a94be92baf8a5c6312a4632482"},
-React.createElement(
-        PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/41512afb346f16611ad6f02f831c7486","selfkey":"ImageArea_974af2ef5dcccb6b5655048339f4aeef","parentkey":"VerticalGrid_8b9d49e38687ce8145bb86865059ac6b"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"特色桃子"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"提示: 此处需要无背景的 png 图片。来自沼地的野生桃子，富含多种维他命。"},{"insert":"\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_e62a1b73d2321d6385fb18fddaa6d5c3","parentkey":"VerticalGrid_8b9d49e38687ce8145bb86865059ac6b"}
-    )
-    )
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_6f72b1a8ab2790178b74f394a22c39ac","parentkey":"VerticalLayout_d4d97040d0ad0a74169ff627795f358a"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/161a80f4bf0b2539aef6016f8f4ce45b)","backgroundType":"image","imageInfo":{"width":800,"height":533},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_8df03f25553ba9badd9eab6ebe2d33d3","flex":[2,8,2],"selfkey":"VerticalLayout_56d2cc1c740ac2bf786c9e55005ad565","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_f30088b9005d0d9ae849ea47bacade2e","parentkey":"VerticalLayout_56d2cc1c740ac2bf786c9e55005ad565"}
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_18046843001855a9b9c75b259f50a970","parentkey":"VerticalLayout_56d2cc1c740ac2bf786c9e55005ad565"},
-React.createElement(
-        "div",
-        {"style":{"paddingTop":0},"selfkey":"div_83f97ed3289b0461f3685b486504ed97","parentkey":"VerticalGrid_18046843001855a9b9c75b259f50a970"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"flex":[12],"id":"VerticalLayout_3fb574e0a68aa8150e229742e1379f26","fullWithChilren":false,"selfkey":"VerticalLayout_8a1a4d885e838c33a256e696278eb6e4","parentkey":"div_83f97ed3289b0461f3685b486504ed97"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_166b4552520fff4c109646af22c7d16e","parentkey":"VerticalLayout_8a1a4d885e838c33a256e696278eb6e4"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"顾客评价","attributes":{"font":"serif"}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_354f901395e8013437bc1827d0ee9abe","parentkey":"VerticalGrid_166b4552520fff4c109646af22c7d16e"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"header":3}},{"insert":"2018.4.30","attributes":{"color":"#333333","font":"monospace","bold":true}},{"insert":"\n","attributes":{"header":3}},{"insert":"\n"},{"insert":"好吃的！我定的店是人广附近的，需要坐地铁，因为安全问题，所以他们没有给蜡烛，这个有点小遗憾，毕竟是给朋友过生日的，但是，真的很好吃！六个人分都是够的！一次就能吃完！分量也是足足的！关键就是喜欢吃冰激凌蛋糕的一定要尝试哟！#冰激凌# #提拉米苏杏仁#","attributes":{"color":"#666666"}},{"insert":"\n","attributes":{"header":3}}],"readOnly":false,"selfkey":"TextArea_cce43ff9dc298ba844669f6e8745719b","parentkey":"VerticalGrid_166b4552520fff4c109646af22c7d16e"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"header":3}},{"insert":"﻿2018.4.30","attributes":{"color":"#333333","font":"monospace","bold":true}},{"insert":"\n","attributes":{"header":3}},{"insert":"\n"},{"insert":"买了很多次了，每次都忘记来评价！口味确实很好吃！比较香！服务态度也不错！经济实惠！店里环境也还可以！位置比较好找！有时候需要排队！个人最爱牛油果梨！强烈推荐！","attributes":{"color":"#666666"}},{"insert":"\n","attributes":{"header":3}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_852914e8224c3634d68cea2bd4849dd8","parentkey":"VerticalGrid_166b4552520fff4c109646af22c7d16e"}
-    ),
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"header":3}},{"insert":"﻿2018.4.30","attributes":{"font":"monospace","color":"#333333","bold":true}},{"insert":"\n","attributes":{"header":3}},{"insert":"\n"},{"insert":"买收到有点小贵啊，这地段的价格确实贵了，味道还是很不错，好像涨价了。","attributes":{"color":"#666666"}},{"insert":"\n","attributes":{"header":3}},{"insert":"\n","attributes":{"align":"center","header":1}}],"readOnly":false,"selfkey":"TextArea_7f10e980f2f2cf4df26dd8ee437d0a60","parentkey":"VerticalGrid_166b4552520fff4c109646af22c7d16e"}
-    )
-    )
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_88663b263dcd6a49a7ae600d664cd350","parentkey":"VerticalLayout_56d2cc1c740ac2bf786c9e55005ad565"}
-    )
-    ),
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/04cc6c9505d771b0660a4ea8ea2bf887)","backgroundType":"image","imageInfo":{"width":800,"height":619},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_56c7fdef05c6d7de8eabfa33c15c9eff","flex":[6,6],"fullWithChilren":true,"selfkey":"VerticalLayout_630d065b1692c8755965970fc71f804a","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_142913ffe52d27811fff408aabcc8f3d","parentkey":"VerticalLayout_630d065b1692c8755965970fc71f804a"},
-React.createElement(
-        "div",
-        {"style":{"paddingTop":0},"selfkey":"div_87bba3b13fd4009a6d19a47537015e3a","parentkey":"VerticalGrid_142913ffe52d27811fff408aabcc8f3d"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/dfb56a0b9ac5f1211c3d85ac0f800d13)","backgroundType":"image","imageInfo":{"width":800,"height":619},"fillType":"stretch","enableParallex":true},"flex":[12],"id":"VerticalLayout_489a29f03f032ba2cf12321ae176e031","fullWithChilren":true,"selfkey":"VerticalLayout_29698dff96c2f715480bc8085216573b","parentkey":"div_87bba3b13fd4009a6d19a47537015e3a"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_1901757f1add9814d7745ad1f6591414","parentkey":"VerticalLayout_29698dff96c2f715480bc8085216573b"},
-React.createElement(
-        PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n\n\n\n\n","attributes":{"align":"center","header":1}},{"insert":"精品菜肴","attributes":{"color":"#ffffff","size":"large"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_64e4c15b0d2fc0e49fc0ee8765eae429","parentkey":"VerticalGrid_1901757f1add9814d7745ad1f6591414"}
-    )
-    )
-    )
-    )
-    ),
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_7384240ecaf13036459579fee522fdbd","parentkey":"VerticalLayout_630d065b1692c8755965970fc71f804a"},
-React.createElement(
-        "div",
-        {"style":{"paddingTop":0},"selfkey":"div_33f308538352be5a160b214430ff2fd2","parentkey":"VerticalGrid_7384240ecaf13036459579fee522fdbd"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f8bbd0","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"flex":[12],"id":"VerticalLayout_17214115e325f3c20b0c79c91ed6ac95","fullWithChilren":true,"selfkey":"VerticalLayout_8d732747d2df04606bccbd76bafef46f","parentkey":"div_33f308538352be5a160b214430ff2fd2"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_1ac3cc44ff752ecf25e42abcd7bc86d6","parentkey":"VerticalLayout_8d732747d2df04606bccbd76bafef46f"},
-React.createElement(
-        "div",
-        {"style":{},"selfkey":"div_99e029f82bda137451f3e2f52786b80a","parentkey":"VerticalGrid_1ac3cc44ff752ecf25e42abcd7bc86d6"},
-React.createElement(
-        PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"flex":[12],"id":"VerticalLayout_5401b1b24c3218135107e080c4dc7438","fullWithChilren":true,"selfkey":"VerticalLayout_b4f3038e514ab4e4de02d2c499bad189","parentkey":"div_99e029f82bda137451f3e2f52786b80a"},
-React.createElement(
-        PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_7b249529883cbbbafec01dd43404e89d","parentkey":"VerticalLayout_b4f3038e514ab4e4de02d2c499bad189"}
     )
     ),
 React.createElement(
         PreviewPhotoGallery,
-        {"backgroundInfo":{"background":"#f2f2eb","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"imgContainerMargin":5,"intensity":2,"galleryWidth":90,"id":"PhotoGallery_fd0ba05ee157234f610f88942fc2e0f4","selfkey":"PhotoGallery_e1f913623958280a1f1433e0162f93a7","parentkey":"div_99e029f82bda137451f3e2f52786b80a"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"imgContainerMargin":5,"intensity":4,"galleryWidth":72,"id":"PhotoGallery_c9d2a355dcd85e47cb2cd5d17cf171f2","selfkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23","parentkey":"div_033965c3be5f0231c1ab11c1440f7d27"},
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/6f396b16c3fda81d7b7f368afb708dc2","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_4f40ffa97c79d411c47d47fee4a876c5","parentkey":"PhotoGallery_e1f913623958280a1f1433e0162f93a7"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/e27abd953177fbf27ebfad403f9fffb6","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_3af19220071c259aeeb3794140fefff0","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
     ),
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/e1ab65f1397ee3f009bd9223cf5f0227","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_fb2bcc144103993819673747d3589b3a","parentkey":"PhotoGallery_e1f913623958280a1f1433e0162f93a7"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/2156d4338c4c758b73c1a9d79289b2d0","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_c0c956481c210459d885c804e898c170","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
     ),
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/78d31c0f9df942dd5d46eae5b27a7ba9","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_d4ccda22176e59ef0f65410e5e085faa","parentkey":"PhotoGallery_e1f913623958280a1f1433e0162f93a7"}
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/4fb134a179cf85076c365e4b5a37247c","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_ec9c751c703d1df9b3e7648e162f7dfe","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
     ),
 React.createElement(
         PreviewImageArea,
-        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/9861b162804f80985438889f84de53c2","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_f401f050fc738702101dff079ecd5132","parentkey":"PhotoGallery_e1f913623958280a1f1433e0162f93a7"}
-    )
-    )
-    )
-    )
-    )
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/f2fbb887e763ab86a774611144a1ac5a","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_7647f53e1ff39e66c6a7ab312439fcdc","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/0572b493c77226fa00d5c8c860ae7a6b","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_12964c7b16c46b5064724c1eca34c80b","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/3f3caae8ef2388500705042c027b561a","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_49dd7680a74e347323f329014ce57d1f","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/28f1572f1bd1a32adfca33ab3cf3d476","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_7ba4792a387cbfb3f0324d62ba2ed3c6","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
+    ),
+React.createElement(
+        PreviewImageArea,
+        {"alt":"initial","src":"http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/temporary/layout/331473f9e4d44c1facf3d93d51c390c2","galleryStyle":{"type":"verticalGallery","width":1,"height":1},"selfkey":"ImageArea_30b5b052f023eced69dc9d4334568527","parentkey":"PhotoGallery_e01a187e5d67089934df904dd3a2ec23"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"url(http://blog-src.b0.upaiyun.com/taohe/dev/editPage/administrator/1/template/13/4365e387fb106fd4ee62029c4f804d9d)","backgroundType":"image","imageInfo":{"width":800,"height":518},"fillType":"stretch","enableParallex":true},"id":"VerticalLayout_886af867510028f6dca209bbb5a4e1ba","flex":[12],"selfkey":"VerticalLayout_cbfb6b36f57f015eeb90ee49274430ca","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_05ed66094b9cf867440e6adc5ed09e2c","flex":[12],"selfkey":"VerticalLayout_c81644d88eaf9664e6cbee54075ce39e","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_799053e7744ad656a6423a9f850d3bf7","parentkey":"VerticalLayout_cbfb6b36f57f015eeb90ee49274430ca"},
+        {"selfkey":"VerticalGrid_a96f33783e334b172ba6672fd3bcb750","parentkey":"VerticalLayout_c81644d88eaf9664e6cbee54075ce39e"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"订购食材:","attributes":{"font":"serif","color":"#ffffff","size":"huge"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"0527-354-325","attributes":{"color":"#ffffff","size":"large"}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_bf5e3683172b45fe6c4e8f0a9eadb8e7","parentkey":"VerticalGrid_799053e7744ad656a6423a9f850d3bf7"}
+        {"deltaDeltaValue":[{"insert":"常见问题","attributes":{"color":"#ff9900","size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"关于桃核家具的详细说明","attributes":{"color":"#bbbbbb","bold":true}},{"insert":"\n\n","attributes":{"align":"center","header":3}},{"insert":"出售的家具售后服务是怎么样的？"},{"insert":"\n","attributes":{"indent":1,"header":3}},{"insert":"\n","attributes":{"indent":1}},{"insert":"在出售后的30天内，可自由更换同款的其他规格、款式设计的产品。"},{"insert":"\n","attributes":{"indent":1}},{"insert":"此外，在使用的2年内，出现产品质量性的问题，都可以享受全额退款服务！"},{"insert":"\n\n","attributes":{"indent":1}},{"insert":"是否提供定制化的服务？"},{"insert":"\n","attributes":{"indent":1,"header":3}},{"insert":"\n","attributes":{"indent":1}},{"insert":"我们提供定制化的需求，如果您希望更深度的定制，例如颜色、材质、规格，请在最下方联系我们，我们的设计团队会根据您的需求为你报价。期待您的来信！"},{"insert":"\n\n","attributes":{"indent":1}},{"insert":"线下配送服务"},{"insert":"\n","attributes":{"indent":1,"header":3}},{"insert":"\n","attributes":{"indent":1}},{"insert":"您可以选择自提或者标准快递服务，通常快递服务达到时间将根据您所在的位置决定。"},{"insert":"\n","attributes":{"indent":1}},{"insert":"全国购物满600元即可享受包邮服务。"},{"insert":"\n","attributes":{"indent":1}},{"insert":"\n"},{"insert":"\n\n\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_bf9f11dcc0556e36939308c212796aef","parentkey":"VerticalGrid_a96f33783e334b172ba6672fd3bcb750"}
     )
     )
     ),
 React.createElement(
         PreviewVerticalLayout,
-        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_c44c01a634760804b07fa864acd39cc4","flex":[12],"fullWithChilren":false,"selfkey":"VerticalLayout_a98972f463dc497664d67de15ab8b124","parentkey":"Root_a87aa71c29eac31c1624dd034911e3c0"},
+        {"backgroundInfo":{"background":"white","backgroundType":"pureColor","imageInfo":{},"fillType":null,"enableParallex":null},"id":"VerticalLayout_c265ed96dd414c985e4f5c3f00002e4c","flex":[12],"selfkey":"VerticalLayout_6b57f3ac83694c6d15ddb93b665985b8","parentkey":"Root_e9a3766e1f73550c0e0add5392bea0ea"},
 React.createElement(
         PreviewVerticalGrid,
-        {"selfkey":"VerticalGrid_da279684903068ccabefcd0156b167aa","parentkey":"VerticalLayout_a98972f463dc497664d67de15ab8b124"},
+        {"selfkey":"VerticalGrid_24b26a22574948ba71a49e002774511b","parentkey":"VerticalLayout_6b57f3ac83694c6d15ddb93b665985b8"},
 React.createElement(
         PreviewTextArea,
-        {"deltaDeltaValue":[{"insert":"\n\n\n","attributes":{"align":"center"}},{"insert":"————————————————————————————————————————————————————————————————————————————————","attributes":{"font":"serif"}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"假装有备案的底部","attributes":{"font":"serif"}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"Copyright 2018 -- Joey","attributes":{"font":"serif"}},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_ca4972e3660d279740b4162040ddf0f4","parentkey":"VerticalGrid_da279684903068ccabefcd0156b167aa"}
+        {"deltaDeltaValue":[{"insert":"联系我们","attributes":{"size":"large","bold":true}},{"insert":"\n","attributes":{"align":"center","header":2}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"我们与您一样，爱上你的家"},{"insert":"\n","attributes":{"align":"center","header":3}},{"insert":"\n","attributes":{"align":"center"}},{"insert":"https://www.taohespace.com","attributes":{"font":"serif"}},{"insert":"\n\n","attributes":{"align":"center"}},{"insert":"\n","attributes":{"align":"center","header":1}},{"insert":"\n\n\n\n\n\n\n","attributes":{"align":"center"}},{"insert":"\n\n\n\n\n\n\n\n\n\n—————————————————————————————————————————————————————————————————————"},{"insert":"\n","attributes":{"align":"center"}},{"insert":"假装有备案的底部"},{"insert":"\n","attributes":{"align":"center"}},{"insert":"Copyright 2018 -- Joey"},{"insert":"\n","attributes":{"align":"center"}}],"readOnly":false,"selfkey":"TextArea_c60c6a415c8dd4096ea6c234140cde12","parentkey":"VerticalGrid_24b26a22574948ba71a49e002774511b"}
     )
     )
     )
