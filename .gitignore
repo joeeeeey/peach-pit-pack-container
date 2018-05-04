@@ -25,3 +25,5 @@ Makefile
 
 public/images/
 /scripts
+src/pages/index.js
+package.json
