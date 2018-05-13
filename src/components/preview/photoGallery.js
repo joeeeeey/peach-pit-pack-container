@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Measure from 'react-measure';
 import computeImage from '../../utils/computeImage'
 import PreviewImageArea from '../preview/imageArea'
-import backgroundSetting from '../../layoutSettings/backgroundSetting'
+import backgroundSetting from '../../jssSettings/backgroundSetting'
 
 const imgContainerStyle = {
   "overflow": "hidden",
@@ -90,6 +90,7 @@ export default class PreviewPhotoGallery extends Component {
                       <div key={childPhotoInfo.props.selfkey} name="imgContainer" style={Object.assign({ margin: imgContainerMargin }, imgContainerStyle)}>
                         <div>
                           <PreviewImageArea
+                            noMeasure={true}
                             src={childPhotoInfo.src}
                             imageContainerStyle={{}}
                             imageStyle={{ width: childPhotoInfo.width, height: childPhotoInfo.height }}

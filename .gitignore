@@ -26,4 +26,6 @@ Makefile
 public/images/
 /scripts
 src/pages/index.js
-package.json
+package-lock.json
+
+update.sh

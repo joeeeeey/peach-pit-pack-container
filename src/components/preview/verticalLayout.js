@@ -17,7 +17,7 @@
 // {"native":false,"nodeName":"VerticalLayout","props":{}}
 import React, { Component } from 'react';
 import Grid from 'material-ui/Grid';
-import backgroundSetting from '../../layoutSettings/backgroundSetting'
+import backgroundSetting from '../../jssSettings/backgroundSetting'
 
 
 // Layout 的公共样式， 可以抽离
@@ -29,14 +29,6 @@ const defalutFlexLayout = [8, 4]
 
 
 export default class PreviewVerticalLayout extends Component {
-  // getLayoutDivStyle = () => {
-  //   if (this.props.fullWithChilren) {
-  //     return { margin: '0 0', width: '100%', flexGrow: 1, padding: '0 0' }
-  //   } else {
-  //     return { margin: '0 auto', width: '84%', flexGrow: 1, padding: '5% 0' }
-  //   }
-  // }
-
   getLayoutDivStyle = () => {
     if (this.props.fullWithChilren) {
       return 'verticalLayoutContainerFullWithChilren'
