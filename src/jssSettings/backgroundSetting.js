@@ -21,9 +21,17 @@
 // fullHeight
 // display: grid 是为了满屏时将内容垂直居中
 // 子元素设置 margin: auto https://css-tricks.com/centering-css-complete-guide/
+import deviceDetect from '../utils/deviceDetect'
 
 const defaultParallexStyle = {
   backgroundAttachment: 'fixed',
+  backgroundPosition: '50% 50%',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+}
+
+const iosParallexStyle = {
+  backgroundAttachment: 'initial',
   backgroundPosition: '50% 50%',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
@@ -78,7 +86,11 @@ function getBackgroundFillTypeStyle(fillType, background) {
 // 视差样式
 function getBackgroundParallexStyle(enableParallex) {
   if (enableParallex) {
-    return defaultParallexStyle;
+    if (deviceDetect.isIOS()) {
+      return iosParallexStyle
+    } else {
+      return defaultParallexStyle;
+    }
   } else { return {} }
 }
 
