@@ -29,3 +29,4 @@ src/pages/index.js
 package-lock.json
 
 update.sh
+public/index.html
