@@ -34,7 +34,7 @@ const iosParallexStyle = {
   backgroundAttachment: 'initial',
   backgroundPosition: '50% 50%',
   backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
+  // backgroundSize: 'cover',
 }
 
 // TODO 使用 webp 需要做浏览器判断
@@ -64,7 +64,6 @@ function getBackgroundFillTypeStyle(fillType, background) {
       return {
         backgroundSize: '100% 100%',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
         backgroundPosition: '50% 50%',
         backgroundImage: background
       }
